@@ -1,20 +1,10 @@
 cordova-plugin-androidx
 =======================
 
-This Cordova/Phonegap plugin enables [AndroidX](https://developer.android.com/jetpack/androidx/migrate) in a project.
+This Cordova/Phonegap plugin enables AndroidX in a Cordova project ([AndroidX](https://developer.android.com/jetpack/androidx/migrate) is the successor to the [Android Support Library](https://developer.android.com/topic/libraries/support-library/index)).
 
-This allows the use of plugins which have migrated to AndroidX, etc.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+This plugin is useful if your project contains plugins which have migrated to AndroidX or if you otherwise want to enable AndroidX in your Cordova Android platform project. 
 
 # Requirements
 
@@ -28,10 +18,9 @@ This plugin requires a minimum of [`cordova@9`](https://github.com/apache/cordov
     
 # Usage
 
-There is no usage! Once the plugin is installed it will configure the native Android platform in your Cordova project to use AndroidX.
+Once the plugin is installed it will persistently enable AndroidX by editing the `gradle.properties` file in your Cordova Android platform project.
 
-If you encounter subsequent issues such as build failures **do not report them against this plugin** as it simply enables AndroidX.
-Instead check your other existing plugins to see if they are compatible with AndroidX and if not raise the issue against them.
+If you encounter build failures after installing this plugin (or after manually enabling AndroidX) try installing [cordova-plugin-androidx-adapter](https://github.com/dpa99c/cordova-plugin-androidx-adapter) into your Cordova project; it will migrate any references to the legacy Android Support library in the Gradle config or Java source to use the new AndroidX mappings which should resolve build failures due to referencing legacy Support Library assets.
 
 License
 ================
