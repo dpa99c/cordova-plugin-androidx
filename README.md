@@ -15,7 +15,7 @@ To help ensure this plugin is kept updated, new features are added and bugfixes 
 
 # Requirements
 
-This plugin requires a minimum of [`cordova@9`](https://github.com/apache/cordova-cli) and [`cordova-android@8`](https://github.com/apache/cordova-android).
+This plugin requires a minimum of [`cordova@8`](https://github.com/apache/cordova-cli) and [`cordova-android@8`](https://github.com/apache/cordova-android).
  
 # Installation
 
