@@ -1,11 +1,13 @@
 {
   "name": "cordova-plugin-androidx",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Cordova/Phonegap plugin to enable AndroidX",
   "author": "Dave Alden",
   "license": "MIT",
-  "dependencies": {
-    "q": "^1.4.1"
+  "repository": "dpa99c/cordova-plugin-androidx",
+  "bugs": {
+    "url": "https://github.com/dpa99c/cordova-plugin-androidx/issues"
   },
+  "dependencies": {},
   "devDependencies": {}
 }
