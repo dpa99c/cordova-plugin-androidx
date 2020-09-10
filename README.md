@@ -1,6 +1,13 @@
 cordova-plugin-androidx
 =======================
 
+# DEPRECATION NOTICE
+This plugin is deprecated as it's no longer required since [`cordova-android@9`](https://github.com/apache/cordova-android/blob/master/RELEASENOTES.md#900-jun-23-2020) adds built-in support for AndroidX. 
+
+- This plugin is only needed if your project uses legacy `cordova-android@8`.
+- If you update to `cordova-android@9` and your project contains this plugin then you should remove it.
+
+# Purpose
 This Cordova/Phonegap plugin enables AndroidX in a Cordova project ([AndroidX](https://developer.android.com/jetpack/androidx/migrate) is the successor to the [Android Support Library](https://developer.android.com/topic/libraries/support-library/index)).
 
 This plugin is useful if your project contains plugins which have migrated to AndroidX or if you otherwise want to enable AndroidX in your Cordova Android platform project.
@@ -15,7 +22,7 @@ To help ensure this plugin is kept updated, new features are added and bugfixes 
 
 # Requirements
 
-This plugin requires a minimum of [`cordova@8`](https://github.com/apache/cordova-cli) and [`cordova-android@8`](https://github.com/apache/cordova-android).
+This plugin requires a minimum of [`cordova@8`](https://github.com/apache/cordova-cli) and specifically [`cordova-android@8`](https://github.com/apache/cordova-android).
  
 # Installation
 
